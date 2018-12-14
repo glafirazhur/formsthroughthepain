@@ -1,0 +1,399 @@
+.shower {
+    --slide-ratio: calc(16 / 9);
+    --color-key: #01579b;
+}
+
+.slide::after {
+    right: 50px;
+    bottom: 30px;
+    text-align: right;
+}
+
+.cover {
+    max-width: unset;
+}
+
+.main-cover .cover-header {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px 100px;
+    background-color: var(--color-black);
+}
+
+.main-cover  h2 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+.main-cover  p {
+    color: #fff;
+}
+
+.slide {
+    padding: 40px 120px 50px 120px;
+}
+
+.slide table {
+    margin-left: -105px;
+    margin-top:10px;
+    margin-bottom: 5px;
+}
+
+.slide th, .slide td {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+.slide td {
+    padding-left: 20px;
+}
+
+.slide th:last-child, .slide td:last-child {
+    padding-right: 50px;
+}
+
+.slide th:first-child, .slide td:first-child {
+    padding-left: 105px;
+}
+
+.slide pre code {
+    font-size: 20px;
+    margin-left: 0px;
+    padding: 0;
+    width: 100%;
+    background: var(--color-back);;
+    line-height: 1.5;
+}
+
+.contact-list ::before {
+    display: none;
+}
+.pos {
+    position: absolute;
+    right: 40px;
+    top: 127px;
+    width: 355px;
+}
+
+.steps.left-side {
+    margin-left: -50px;
+}
+
+.steps li {
+    font-size: 25px;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+.steps.left-side li {
+    font-size: 22px;
+}
+
+.steps li img{
+    display: block;
+    max-width: 100%;
+    margin-top: 15px;
+}
+
+.slide  .codepen-link {
+    position: absolute;
+    top: 40px;
+    right: 100px;
+    background: none;
+}
+
+.slide .codepen-link img{
+    width: 50px;
+}
+
+.slide h2.white {
+    color: var(--color-key);
+    background-color: #fff;
+    padding: 10px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.slide .small-header {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+h2.rotate15 {
+    transform: rotate(-15deg) translate(-50%, -70%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 40px;
+    width: 70%;
+}
+
+h2.rotate-15 {
+    transform: rotate(8deg) translate(-45%, 126%);
+}
+
+.accessibility {
+    color: #fff;
+    position: absolute;
+    top: 54px;
+    right: -52px;
+    font-size: 30px;
+    padding: 4px 40px;
+    background: #4caf50;
+    line-height: 1;
+    transform: rotate(45deg);
+}
+
+.va-center {
+    display: flex;
+    align-items: center;
+}
+
+.ha-center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ha-center-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.ha-center-row-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    left: 80px;
+}
+.padding-top {
+    padding-top: 15px;
+    display: inline-block;
+}
+
+.with-border {
+    border: 4px solid rgba(0,0,0,0.4
+    );
+    padding: 0px 20px;
+}
+
+.browser-icon {
+    display: block;
+    height: 60px;
+    margin: 10px 10px;
+}
+
+.slide h2 {
+    font-weight: 400;
+    font-size: 40px;
+
+}
+
+.slide h2.shout {
+    font-weight: 400;
+    text-align: center;
+
+    padding-left: 0;
+}
+
+.slide.content-full-height {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.height-100 {
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    width: 620px;
+}
+
+.slide__img {
+    max-height: calc(100% - 100px);
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.hover-img {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slide.slide__gallery {
+    padding: 40px 50px 50px 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.slide.slide__gallery h2 {
+    flex-basis: 100%;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin-top: -100px;
+}
+.gallery img{
+    width: 100%;
+}
+
+.slide__img.full-height {
+    max-height: 100%;
+}
+
+.center-img {
+    display: block;
+    margin: 0 auto;
+}
+
+.slide p {
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+
+.center {
+    text-align: center;
+}
+
+.portatrait {
+    width: 100%;
+}
+
+.icon {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.contact-list__item {
+    display: flex;
+    align-items: center;
+}
+.imaked {
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.icon-70 {
+    width: 70px;
+}
+
+.ahaha {
+    color: #f00;
+    padding-left: 20px;
+}
+
+.slide .center-center {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -50px;
+}
+
+.icon_big {
+    width: 120px;
+    margin-right: 20px;
+}
+
+.slide .inline-link {
+    text-decoration: none;
+    background: none;
+    line-height: 1.5;
+    border: none;
+    padding-top: 20px;
+    display: inline-block;
+}
+
+
+h2.new {
+    position: absolute;
+    top: 50%;
+    font-size: 25px;
+    width: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+}
+
+.ie8 {
+    position: absolute;
+    top: 50%;
+    background-color: #fff;
+    font-size: 30px;
+    color: var(--color-key);
+    display: block;
+    padding: 5px 10px;
+    font-weight: 700;
+    line-height: 1;
+    transform: rotate(-20deg);
+    text-align: center;
+}
+
+.ie8 img {
+    width: 120px;
+    display: block;
+}
+
+.safari {
+    position: absolute;
+    top: 50%;
+    right: 80px;
+    background-color: #fff;
+    font-size: 30px;
+    color: var(--color-key);
+    display: block;
+    padding: 5px 10px;
+    font-weight: 700;
+    line-height: 1;
+    transform: rotate(20deg);
+    text-align: center;
+}
+
+.safari img {
+    width: 120px;
+    display: block;
+}
+
+
+.small-link {
+    font-size: 18px;
+}
+.lovata {
+    width: 160px;
+}
+
+#picture h2 {
+    color: white;
+}
+
+#see-more h2 {
+    font-size: 100px
+}
+
+#see-more img {
+    width: 0.72em;
+    height: 0.72em;
+}
